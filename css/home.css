@@ -589,9 +589,9 @@ body {
 }
 
 .main-content.shifted {
-  -webkit-transform: translateY(32px) scale(0.95);
-      -ms-transform: translateY(32px) scale(0.95);
-          transform: translateY(32px) scale(0.95);
+  -webkit-transform: translateY(42px) scale(0.95);
+      -ms-transform: translateY(42px) scale(0.95);
+          transform: translateY(42px) scale(0.95);
   border-radius: 20px 0px 0px 20px;
   -webkit-box-shadow: -14px 3px 41px rgba(0, 126, 54, 0.06);
           box-shadow: -14px 3px 41px rgba(0, 126, 54, 0.06);
