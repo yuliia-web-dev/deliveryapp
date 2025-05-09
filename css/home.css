@@ -494,7 +494,7 @@ body {
   background-color: #fff;
   height: 100vh;
   position: absolute;
-  top: 4.8125rem;
+  top: 1.25rem;
   left: 0;
   z-index: 1000;
   -webkit-transform: translateX(-100%);

@@ -48,11 +48,9 @@ body {
 	max-width: toRem(375);
 }
 
-.header {
-	
-}
+
 .mockup {
-	padding-top: toRem(77);
+	padding-top: toRem(20);
 	background-color: #0a4f27;
 	margin: 0 auto;
 	width: 100%;
@@ -68,8 +66,7 @@ body {
 	}
 }
 .welcome {
-	padding-top: toRem(56);
-	padding-bottom: toRem(50);
+
 	position: relative;
 	&__bg-image {
 		pointer-events: none;
@@ -92,7 +89,7 @@ body {
 		width: 100%;
 		height: toRem(180);
 		position: absolute;
-		top: toRem(7);
+		top: toRem(20);
 	}
 	&__title {
 		color: #fff;
