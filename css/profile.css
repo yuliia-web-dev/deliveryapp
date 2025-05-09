@@ -125,30 +125,13 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
 [class*=__container] {
   margin: 0 auto;
   padding: 0 1.75rem;
   max-width: 23.4375rem;
-}
-
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
 }
 
 .subheader {

@@ -248,30 +248,13 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
 [class*=__container] {
   margin: 0 auto;
   padding: 0 1.75rem;
   max-width: 23.4375rem;
-}
-
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
 }
 
 .subheader {
@@ -332,20 +315,20 @@ body {
   font-weight: 600;
   text-transform: capitalize;
 }
-@media (min-width: 21.8125em) {
+@media (min-width: 23.4375em) {
   .orders__buttons-wrap button {
     padding-top: 0.875rem;
   }
 }
-@media (min-width: 20em) and (max-width: 21.8125em) {
-  @supports (padding-top: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem )) {
+@media (min-width: 20em) and (max-width: 23.4375em) {
+  @supports (padding-top: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem )) {
     .orders__buttons-wrap button {
-      padding-top: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem );
+      padding-top: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem );
     }
   }
-  @supports not (padding-top: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem )) {
+  @supports not (padding-top: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem )) {
     .orders__buttons-wrap button {
-      padding-top: calc(0.4375rem + 0.4375 * (100vw - 20rem) / 1.8125);
+      padding-top: calc(0.4375rem + 0.4375 * (100vw - 20rem) / 3.4375);
     }
   }
 }
@@ -354,20 +337,20 @@ body {
     padding-top: 0.4375rem;
   }
 }
-@media (min-width: 21.8125em) {
+@media (min-width: 23.4375em) {
   .orders__buttons-wrap button {
     padding-bottom: 0.875rem;
   }
 }
-@media (min-width: 20em) and (max-width: 21.8125em) {
-  @supports (padding-bottom: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem )) {
+@media (min-width: 20em) and (max-width: 23.4375em) {
+  @supports (padding-bottom: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem )) {
     .orders__buttons-wrap button {
-      padding-bottom: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem );
+      padding-bottom: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem );
     }
   }
-  @supports not (padding-bottom: clamp( 0.4375rem , -4.3900862069rem  +  24.1379310345vw , 0.875rem )) {
+  @supports not (padding-bottom: clamp( 0.4375rem , -2.1079545455rem  +  12.7272727273vw , 0.875rem )) {
     .orders__buttons-wrap button {
-      padding-bottom: calc(0.4375rem + 0.4375 * (100vw - 20rem) / 1.8125);
+      padding-bottom: calc(0.4375rem + 0.4375 * (100vw - 20rem) / 3.4375);
     }
   }
 }
@@ -376,20 +359,20 @@ body {
     padding-bottom: 0.4375rem;
   }
 }
-@media (min-width: 21.8125em) {
+@media (min-width: 23.4375em) {
   .orders__buttons-wrap button {
     padding-left: 1.8125rem;
   }
 }
-@media (min-width: 20em) and (max-width: 21.8125em) {
-  @supports (padding-left: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem )) {
+@media (min-width: 20em) and (max-width: 23.4375em) {
+  @supports (padding-left: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem )) {
     .orders__buttons-wrap button {
-      padding-left: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem );
+      padding-left: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem );
     }
   }
-  @supports not (padding-left: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem )) {
+  @supports not (padding-left: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem )) {
     .orders__buttons-wrap button {
-      padding-left: calc(0.9375rem + 0.875 * (100vw - 20rem) / 1.8125);
+      padding-left: calc(0.9375rem + 0.875 * (100vw - 20rem) / 3.4375);
     }
   }
 }
@@ -398,20 +381,20 @@ body {
     padding-left: 0.9375rem;
   }
 }
-@media (min-width: 21.8125em) {
+@media (min-width: 23.4375em) {
   .orders__buttons-wrap button {
     padding-right: 1.8125rem;
   }
 }
-@media (min-width: 20em) and (max-width: 21.8125em) {
-  @supports (padding-right: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem )) {
+@media (min-width: 20em) and (max-width: 23.4375em) {
+  @supports (padding-right: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem )) {
     .orders__buttons-wrap button {
-      padding-right: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem );
+      padding-right: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem );
     }
   }
-  @supports not (padding-right: clamp( 0.9375rem , -8.7176724138rem  +  48.275862069vw , 1.8125rem )) {
+  @supports not (padding-right: clamp( 0.9375rem , -4.1534090909rem  +  25.4545454545vw , 1.8125rem )) {
     .orders__buttons-wrap button {
-      padding-right: calc(0.9375rem + 0.875 * (100vw - 20rem) / 1.8125);
+      padding-right: calc(0.9375rem + 0.875 * (100vw - 20rem) / 3.4375);
     }
   }
 }
@@ -598,6 +581,10 @@ body {
   font-family: "Raleway";
 }
 
+.wrapper {
+  background-color: #fff;
+}
+
 [class*=__container] {
   margin: 0 auto;
   padding: 0 1.75rem;
@@ -760,23 +747,6 @@ body {
   display: inline;
 }
 
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
-}
-
 @font-face {
   font-family: "icons";
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -902,30 +872,13 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
 [class*=__container] {
   margin: 0 auto;
   padding: 0 1.75rem;
   max-width: 23.4375rem;
-}
-
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
 }
 
 .subheader {
@@ -1514,30 +1467,13 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
 [class*=__container] {
   margin: 0 auto;
   padding: 0 1.75rem;
   max-width: 23.4375rem;
-}
-
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
 }
 
 .subheader {
@@ -1754,11 +1690,6 @@ html {
 body {
   background-color: #b0eac3;
   font-family: "Raleway";
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1770,28 +1701,26 @@ body {
           align-items: center;
 }
 
-[class*=__container] {
-  margin: 0 auto;
-  padding: 0 1.75rem;
-  max-width: 23.4375rem;
-}
-
-.mockup {
-  background-color: #0a4f27;
-  margin: 0 auto;
+.wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: #0a4f27;
   overflow: hidden;
   position: relative;
   overflow-y: auto;
 }
 @media (min-width: 30em) {
-  .mockup {
+  .wrapper {
     width: 23.4375rem;
     border-radius: 1.25rem;
-    height: 812px;
-    overflow: hidden;
+    height: 50rem;
   }
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  max-width: 23.4375rem;
 }
 
 .welcome {

@@ -125,7 +125,7 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
 [class*=__container] {
@@ -134,25 +134,8 @@ body {
   max-width: 23.4375rem;
 }
 
-.mockup {
-  background-color: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 30em) {
-  .mockup {
-    width: 23.4375rem;
-    border-radius: 1.25rem;
-    height: 812px;
-  }
-}
-
 .subheader {
-  padding-top: 2.0625rem;
+  padding-top: 2.375rem;
 }
 .subheader__container {
   display: -webkit-box;
@@ -494,7 +477,7 @@ body {
   background-color: #fff;
   height: 100vh;
   position: absolute;
-  top: 1.25rem;
+  top: 0;
   left: 0;
   z-index: 1000;
   -webkit-transform: translateX(-100%);
@@ -511,7 +494,7 @@ body {
           transform: translateX(0);
 }
 .sidebar__header {
-  padding: 2.0625rem 1.75rem 0.9375rem 0rem;
+  padding: 2.375rem 1.75rem 0.9375rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

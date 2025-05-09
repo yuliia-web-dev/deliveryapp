@@ -31,7 +31,8 @@ body {
 	font-family: "Raleway";
 }
 .wrapper {
-	overflow-x: hidden;
+		background-color: #fff;
+
 }
 
 [class*="__container"] {
@@ -40,20 +41,6 @@ body {
 	max-width: toRem(375);
 }
 
-.mockup {
-	background-color: #fff;
-	margin: 0 auto;
-	overflow: hidden;
-	overflow-y: auto;
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	@media (min-width: toEm(480)) {
-		width: toRem(375);
-		border-radius: toRem(20);
-		height: 812px;
-	}
-}
 
 .subheader {
 	padding-top: toRem(33);

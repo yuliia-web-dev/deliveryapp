@@ -31,7 +31,7 @@ body {
 	font-family: "Raleway";
 }
 .wrapper {
-	overflow-x: hidden;
+	background-color: #fff;
 }
 
 [class*="__container"] {
@@ -40,23 +40,10 @@ body {
 	max-width: toRem(375);
 }
 
-.mockup {
-	background-color: #fff;
-	margin: 0 auto;
-	overflow: hidden;
-	overflow-y: auto;
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	@media (min-width: toEm(480)) {
-		width: toRem(375);
-		border-radius: toRem(20);
-		height: 812px;
-	}
-}
+
 
 .subheader {
-	padding-top: toRem(33);
+	padding-top: toRem(38);
 
 	&__container {
 		display: flex;
@@ -372,7 +359,7 @@ body {
 	background-color: #fff;
 	height: 100vh;
 	position: absolute;
-	top: toRem(20);
+	top: 0;
 	left: 0;
 	z-index: 1000;
 	transform: translateX(-100%);
@@ -382,7 +369,7 @@ body {
 		transform: translateX(0);
 	}
 	&__header {
-		padding: toRem(33) toRem(28) toRem(15) toRem(0);
+		padding: toRem(38) toRem(28) toRem(15) toRem(0);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

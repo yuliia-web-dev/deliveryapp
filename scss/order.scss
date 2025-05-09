@@ -31,7 +31,7 @@ body {
 	font-family: "Raleway";
 }
 .wrapper {
-	overflow-x: hidden;
+	background-color: #fff;
 }
 
 [class*="__container"] {
@@ -40,20 +40,7 @@ body {
 	max-width: toRem(375);
 }
 
-.mockup {
-	background-color: #fff;
-	margin: 0 auto;
-	overflow: hidden;
-	overflow-y: auto;
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	@media (min-width: toEm(480)) {
-		width: toRem(375);
-		border-radius: toRem(20);
-		height: 812px;
-	}
-}
+
 
 .subheader {
 	padding-top: toRem(33);
@@ -105,10 +92,10 @@ body {
 
 		button {
 			text-wrap: nowrap;
-			@include adaptiveValue("padding-top", 14, 7);
-			@include adaptiveValue("padding-bottom", 14, 7);
-			@include adaptiveValue("padding-left", 29, 15);
-			@include adaptiveValue("padding-right", 29, 15);
+			@include adaptiveValue("padding-top", 14, 7,$widthFrom:375);
+			@include adaptiveValue("padding-bottom", 14, 7,$widthFrom:375);
+			@include adaptiveValue("padding-left", 29, 15, $widthFrom:375);
+			@include adaptiveValue("padding-right", 29, 15,$widthFrom:375);
 			color: #222;
 			font-size: toRem(14);
 			font-weight: 600;

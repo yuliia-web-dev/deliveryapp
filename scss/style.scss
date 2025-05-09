@@ -33,13 +33,23 @@ html {
 body {
 	background-color: #b0eac3;
 	font-family: "Raleway";
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .wrapper {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #0a4f27;
+	overflow: hidden;
+	position: relative;
+	overflow-y: auto;
+	@media (min-width: toEm(480)) {
+		width: toRem(375);
+		border-radius: toRem(20);
+		height: toRem(800);
+	}
+
 }
 
 [class*="__container"] {
@@ -48,24 +58,8 @@ body {
 	max-width: toRem(375);
 }
 
-
-.mockup {
-	background-color: #0a4f27;
-	margin: 0 auto;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-	overflow-y: auto;
-	@media (min-width: toEm(480)) {
-		width: toRem(375);
-		border-radius: toRem(20);
-		height: 812px;
-		overflow: hidden;
-	}
-}
 .welcome {
-padding-bottom: toRem(20);
+	padding-bottom: toRem(20);
 	position: relative;
 	&__bg-image {
 		pointer-events: none;
@@ -74,9 +68,9 @@ padding-bottom: toRem(20);
 		left: toRem(103);
 	}
 	&--padding {
-	padding-top: toRem(210);
+		padding-top: toRem(210);
 	}
-	&--login{
+	&--login {
 		padding-top: toRem(56);
 	}
 
