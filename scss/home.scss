@@ -43,7 +43,7 @@ body {
 
 
 .subheader {
-	padding-top: toRem(38);
+	padding-top: toRem(33);
 
 	&__container {
 		display: flex;
@@ -369,7 +369,7 @@ body {
 		transform: translateX(0);
 	}
 	&__header {
-		padding: toRem(38) toRem(28) toRem(15) toRem(0);
+		padding: toRem(33) toRem(28) toRem(15) toRem(0);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

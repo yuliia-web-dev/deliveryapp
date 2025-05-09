@@ -42,41 +42,6 @@ body {
 
 
 
-.subheader {
-	padding-top: toRem(33);
-
-	&__container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: toRem(10);
-	}
-
-	// .subheader__title
-
-	&__title {
-		color: #222;
-		font-size: toRem(24);
-		font-weight: 700;
-	}
-	&__sidebar-icon {
-	}
-	&__notification-btn {
-		position: relative;
-		&::before {
-			content: "";
-			position: absolute;
-			top: toRem(1);
-			left: toRem(15);
-			width: toRem(13);
-			height: toRem(13);
-			background-color: #ff9b3f;
-			border-radius: toRem(13);
-			border: toRem(2) solid #fff;
-		}
-	}
-}
-
 .orders {
 	padding-top: toRem(20);
 	padding-bottom: toRem(21);

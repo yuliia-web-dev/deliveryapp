@@ -135,7 +135,7 @@ body {
 }
 
 .subheader {
-  padding-top: 2.375rem;
+  padding-top: 2.0625rem;
 }
 .subheader__container {
   display: -webkit-box;
@@ -494,7 +494,7 @@ body {
           transform: translateX(0);
 }
 .sidebar__header {
-  padding: 2.375rem 1.75rem 0.9375rem 0rem;
+  padding: 2.0625rem 1.75rem 0.9375rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
