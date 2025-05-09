@@ -99,18 +99,24 @@ document.addEventListener("DOMContentLoaded", () => {
 	openBtn.addEventListener('click', toggleSidebar);
 
 	content.addEventListener('click', () => {
-		if (isOpen) toggleSidebar();
+		if (isOpen) {
+			// Ховаємо кнопку
+			closeBtn.style.opacity = '0';
+			closeBtn.style.pointerEvents = 'none';
+			toggleSidebar();
+		}
 	});
 
 	closeBtn.addEventListener('click', () => {
 		if (isOpen) {
-			// Ховаємо кнопку одразу
+			// Ховаємо кнопку
 			closeBtn.style.opacity = '0';
 			closeBtn.style.pointerEvents = 'none';
 			toggleSidebar();
 		}
 	});
 });
+
 
 const tabButtons = document.querySelectorAll('.orders__buttons-wrap button');
 const orders = document.querySelectorAll('.orders__item');
