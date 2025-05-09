@@ -368,12 +368,11 @@ body {
 
 .sidebar {
 	padding-left: toRem(28);
-
 	width: 100%;
 	background-color: #fff;
 	height: 100vh;
 	position: absolute;
-	top: 0;
+	top: toRem(77);
 	left: 0;
 	z-index: 1000;
 	transform: translateX(-100%);
