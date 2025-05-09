@@ -1,0 +1,196 @@
+@use "sass:math";
+
+// Кольори
+
+// Функції
+@import "_functions.scss";
+// Шрифти
+@import "_fonts.scss";
+// Іконки
+@import "_icons.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 375;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 319;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #b3ffd0;
+	font-family: "Raleway";
+}
+.wrapper {
+	overflow-x: hidden;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 toRem(28);
+	max-width: toRem(375);
+}
+
+.mockup {
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	@media (min-width: toEm(480)) {
+		width: toRem(375);
+		border-radius: toRem(20);
+		height: 812px;
+	}
+}
+
+.subheader {
+	padding-top: toRem(33);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(10);
+	}
+
+	// .subheader__title
+
+	&__title {
+		color: #222;
+		font-size: toRem(24);
+		font-weight: 700;
+	}
+	&__sidebar-icon {
+	}
+	&__notification-btn {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: toRem(1);
+			left: toRem(15);
+			width: toRem(13);
+			height: toRem(13);
+			background-color: #ff9b3f;
+			border-radius: toRem(13);
+			border: toRem(2) solid #fff;
+		}
+	}
+}
+
+.orders {
+	padding-top: toRem(20);
+	padding-bottom: toRem(21);
+
+	// .orders__buttons-wrap
+
+	&__buttons-wrap {
+		border-radius: toRem(12);
+		background: #f1f1f1;
+		padding: toRem(6);
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			text-wrap: nowrap;
+			@include adaptiveValue("padding-top", 14, 7);
+			@include adaptiveValue("padding-bottom", 14, 7);
+			@include adaptiveValue("padding-left", 29, 15);
+			@include adaptiveValue("padding-right", 29, 15);
+			color: #222;
+			font-size: toRem(14);
+			font-weight: 600;
+			text-transform: capitalize;
+			&.active {
+				border-radius: toRem(12);
+				background: #fff;
+				box-shadow: 0px 9px 16px 0px rgba(0, 13, 5, 0.15);
+			}
+		}
+		margin-bottom: toRem(20);
+	}
+
+	// .orders__wrapper
+
+	&__wrapper {
+		&:not(:last-child) {
+			margin-bottom: toRem(49);
+		}
+	}
+
+	// .orders__item
+
+	&__item {
+		display: flex;
+		gap: toRem(20);
+		&:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
+	}
+}
+.item-order {
+	// .item-order__image
+
+	&__image {
+		width: 92px;
+		height: 103.114px;
+		flex-shrink: 0;
+		border-radius: toRem(12);
+		object-fit: cover;
+	}
+
+	// .item-order__content
+
+	&__content {
+		display: grid;
+		gap: toRem(34);
+	}
+
+	// .item-order__title
+
+	&__title {
+		color: #0d0d0d;
+		font-weight: 500;
+		line-height: toRem(24);
+	}
+
+	// .item-order__info
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		gap: toRem(5);
+		color: #454545;
+		font-size: toRem(18);
+		font-weight: 600;
+		line-height: toRem(16);
+	}
+
+	// .item-order__price
+
+	&__price {
+	}
+
+	// .item-order__quantity
+
+	&__quantity {
+	}
+
+	// .item-order__total-price
+
+	&__total-price {
+		color: #309f5f;
+	}
+}

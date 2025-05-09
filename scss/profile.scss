@@ -1,0 +1,271 @@
+@use "sass:math";
+
+// Кольори
+
+// Функції
+@import "_functions.scss";
+// Шрифти
+@import "_fonts.scss";
+// Іконки
+@import "_icons.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 375;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 319;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #b3ffd0;
+	font-family: "Raleway";
+}
+.wrapper {
+	overflow-x: hidden;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 toRem(28);
+	max-width: toRem(375);
+}
+
+.mockup {
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	@media (min-width: toEm(480)) {
+		width: toRem(375);
+		border-radius: toRem(20);
+		height: 812px;
+	}
+}
+
+.subheader {
+	padding-top: toRem(33);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(10);
+	}
+
+	// .subheader__title
+
+	&__title {
+		color: #222;
+		font-size: toRem(24);
+		font-weight: 700;
+	}
+	&__sidebar-icon {
+	}
+	&__notification-btn {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: toRem(1);
+			left: toRem(15);
+			width: toRem(13);
+			height: toRem(13);
+			background-color: #ff9b3f;
+			border-radius: toRem(13);
+			border: toRem(2) solid #fff;
+		}
+	}
+}
+
+.profile {
+	padding-top: toRem(10);
+	// .profile__image
+
+	&__image {
+		margin: 0 auto;
+		max-width: toRem(126);
+		height: toRem(126);
+		border: toRem(8) solid #fff;
+		background-color: #c4c4c4;
+		border-radius: 50%;
+		z-index: 1;
+		position: relative;
+	}
+
+	// .profile__badge
+
+	&__badge {
+		margin-top: toRem(-35);
+		border-radius: 16px;
+		background: #309f5f;
+		padding: toRem(12) toRem(20);
+		display: flex;
+		justify-content: space-between;
+		gap: toRem(10);
+		z-index: -1;
+		&:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
+	}
+	&__user-name {
+		color: #000;
+		font-size: toRem(24);
+		font-weight: 600;
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: toRem(16);
+		}
+	}
+	&__user-location {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: toRem(10);
+		span {
+			color: #6b6b6b;
+			text-align: center;
+			font-weight: 500;
+		}
+		&:not(:last-child) {
+			margin-bottom: toRem(30);
+		}
+	}
+	&__contact {
+		display: flex;
+		justify-content: space-between;
+		gap: toRem(10);
+		&:not(:last-child) {
+			margin-bottom: toRem(61);
+		}
+	}
+}
+.badge {
+	// .badge__item
+
+	&__item {
+		text-align: center;
+		display: grid;
+		gap: toRem(8);
+	}
+}
+.item-badge {
+	// .item-badge__number
+
+	&__number {
+		color: #fff;
+		font-size: toRem(20);
+		font-weight: 600;
+	}
+	&__text {
+		color: #fff;
+		font-size: toRem(12);
+		font-weight: 400;
+	}
+}
+
+.contact {
+	&__item {
+		display: grid;
+		gap: toRem(9);
+		place-items: center;
+	}
+}
+
+.item-contact {
+	// .item-contact__icon
+
+	&__icon {
+		width: toRem(68);
+		height: toRem(68);
+		border-radius: 50%;
+		background: #ebf6f0;
+		display: grid;
+		place-items: center;
+	}
+
+	// .item-contact__text
+
+	&__text {
+	}
+}
+
+.menu-saved {
+	padding-top: toRem(40);
+	&__title {
+		color: #3d3d3d;
+		font-size: toRem(18);
+		font-weight: 600;
+		&:not(:last-child) {
+			margin-bottom: toRem(21);
+		}
+	}
+	&__swiper {
+		width: 100%;
+		overflow: visible;
+		&:not(:last-child) {
+			margin-bottom: toRem(38);
+		}
+	}
+	&__slide {
+		max-width: toRem(226);
+		min-height: toRem(147);
+		border-radius: toRem(12);
+		overflow: hidden;
+		height: auto;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: toRem(12);
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #000;
+			opacity: 0.4;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+	}
+}
+.slide-menu {
+	padding-top: toRem(92);
+	padding-left: toRem(17);
+	padding-right: toRem(17);
+	padding-bottom: toRem(15);
+	&__title {
+		font-weight: 600;
+	}
+	&__content {
+		color: #fff;
+
+		position: relative;
+		z-index: 2;
+		display: grid;
+		gap: 5;
+		span {
+			font-size: toRem(14);
+		}
+	}
+}

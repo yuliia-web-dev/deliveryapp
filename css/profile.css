@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quando:regular&display=swap");
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+[class*=_icon-]::before {
+  display: inline-block;
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-home:before {
+  content: "\e900";
+  color: #b0acb3;
+}
+
+._icon-notification:before {
+  content: "\e901";
+  color: #b0acb3;
+}
+
+._icon-order:before {
+  content: "\e902";
+  color: #b0acb3;
+}
+
+._icon-profile:before {
+  content: "\e903";
+  color: #b0acb3;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #b3ffd0;
+  font-family: "Raleway";
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  max-width: 23.4375rem;
+}
+
+.mockup {
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 30em) {
+  .mockup {
+    width: 23.4375rem;
+    border-radius: 1.25rem;
+    height: 812px;
+  }
+}
+
+.subheader {
+  padding-top: 2.0625rem;
+}
+.subheader__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+}
+.subheader__title {
+  color: #222;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.subheader__notification-btn {
+  position: relative;
+}
+.subheader__notification-btn::before {
+  content: "";
+  position: absolute;
+  top: 0.0625rem;
+  left: 0.9375rem;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  background-color: #ff9b3f;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid #fff;
+}
+
+.profile {
+  padding-top: 0.625rem;
+}
+.profile__image {
+  margin: 0 auto;
+  max-width: 7.875rem;
+  height: 7.875rem;
+  border: 0.5rem solid #fff;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+.profile__badge {
+  margin-top: -2.1875rem;
+  border-radius: 16px;
+  background: #309f5f;
+  padding: 0.75rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  z-index: -1;
+}
+.profile__badge:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.profile__user-name {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.profile__user-name:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.profile__user-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+.profile__user-location span {
+  color: #6b6b6b;
+  text-align: center;
+  font-weight: 500;
+}
+.profile__user-location:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+.profile__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+}
+.profile__contact:not(:last-child) {
+  margin-bottom: 3.8125rem;
+}
+
+.badge__item {
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.item-badge__number {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.item-badge__text {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.contact__item {
+  display: grid;
+  gap: 0.5625rem;
+  place-items: center;
+}
+
+.item-contact__icon {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  background: #ebf6f0;
+  display: grid;
+  place-items: center;
+}
+.menu-saved {
+  padding-top: 2.5rem;
+}
+.menu-saved__title {
+  color: #3d3d3d;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.menu-saved__title:not(:last-child) {
+  margin-bottom: 1.3125rem;
+}
+.menu-saved__swiper {
+  width: 100%;
+  overflow: visible;
+}
+.menu-saved__swiper:not(:last-child) {
+  margin-bottom: 2.375rem;
+}
+.menu-saved__slide {
+  max-width: 14.125rem;
+  min-height: 9.1875rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+}
+.menu-saved__slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.75rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.menu-saved__slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide-menu {
+  padding-top: 5.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.0625rem;
+  padding-bottom: 0.9375rem;
+}
+.slide-menu__title {
+  font-weight: 600;
+}
+.slide-menu__content {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 5;
+}
+.slide-menu__content span {
+  font-size: 0.875rem;
+}
