@@ -44,7 +44,6 @@ body {
 
 .subheader {
 	padding-top: toRem(33);
-
 	&__container {
 		display: flex;
 		align-items: center;
@@ -354,7 +353,6 @@ body {
 }
 
 .sidebar {
-	padding-left: toRem(28);
 	width: 100%;
 	background-color: #fff;
 	height: 100vh;
@@ -369,7 +367,7 @@ body {
 		transform: translateX(0);
 	}
 	&__header {
-		padding: toRem(33) toRem(28) toRem(15) toRem(0);
+		padding: toRem(33) toRem(28) toRem(15) toRem(30);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -388,7 +386,8 @@ body {
 	&__list {
 	}
 	&__item {
-		padding: toRem(16) 0;
+		max-width: toRem(262);
+		padding: toRem(16) toRem(28);
 		&.active {
 			border-radius: 0px 12px 12px 0px;
 			background: linear-gradient(90deg, #f8f8f8 28.21%, rgba(255, 255, 255, 0) 100%);
@@ -413,6 +412,9 @@ body {
 			}
 		}
 	}
+	&__logout-wrap{
+		padding-left: toRem(28);
+	}
 	&__logout {
 		display: flex;
 		align-items: center;
@@ -422,6 +424,10 @@ body {
 		line-height: toRem(22);
 		padding: toRem(16) 0;
 	}
+	&__button{
+
+	transition: opacity 0.3s ease;		}
+	
 }
 
 .main-content {

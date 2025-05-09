@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const openBtn = document.getElementById('openSidebar');
 	const sidebar = document.getElementById('sidebar');
 	const content = document.getElementById('mainContent');
-	const closeBtn = document.querySelector('.sidebar__button'); // Додаємо кнопку закриття
+	const closeBtn = document.querySelector('.sidebar__button');
 
 	if (!openBtn || !sidebar || !content || !closeBtn) return;
 
@@ -88,6 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		isOpen = !isOpen;
 		sidebar.classList.toggle('active', isOpen);
 		content.classList.toggle('shifted', isOpen);
+
+		if (isOpen) {
+			// Показуємо кнопку знову
+			closeBtn.style.opacity = '1';
+			closeBtn.style.pointerEvents = 'auto';
+		}
 	}
 
 	openBtn.addEventListener('click', toggleSidebar);
@@ -97,7 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	closeBtn.addEventListener('click', () => {
-		if (isOpen) toggleSidebar(); // Закриваємо сайдбар
+		if (isOpen) {
+			// Ховаємо кнопку одразу
+			closeBtn.style.opacity = '0';
+			closeBtn.style.pointerEvents = 'none';
+			toggleSidebar();
+		}
 	});
 });
 

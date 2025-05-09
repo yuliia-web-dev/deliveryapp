@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Delivery app">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/order.css">
+
 
 	<link rel="icon" href="img/carrot.ico" type="image/x-icon">
 
@@ -15,55 +15,56 @@
 </head>
 
 <body>
-	<div class="wrapper">
-			<header class="header">
-			</header>
-			<section class="subheader">
-				<div class="subheader__container">
-					<button class="subheader__sidebar-icon" id="openSidebar" aria-label="open sidebar button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18" fill="none">
-							<rect x="0.5" y="0.833313" width="21" height="2.33333" rx="1" fill="#222222" />
-							<rect x="6" y="7.83331" width="21" height="2.33333" rx="1" fill="#222222" />
-							<rect x="0.5" y="14.8333" width="21" height="2.33334" rx="1" fill="#222222" />
-						</svg>
-					</button>
-					<h2 class="subheader__title">Orders</h2>
-					<button class="subheader__filter-btn" aria-label="sort items">
-						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-							<path
-								d="M10.5 1.16669C10.1906 1.16669 9.89383 1.2896 9.67504 1.5084C9.45625 1.72719 9.33333 2.02393 9.33333 2.33335V22.8504L6.65816 20.1752C6.43813 19.9627 6.14343 19.8451 5.83753 19.8477C5.53163 19.8504 5.23902 19.9731 5.02271 20.1894C4.8064 20.4057 4.6837 20.6983 4.68104 21.0042C4.67839 21.3101 4.79598 21.6048 5.0085 21.8249L9.67516 26.4915C9.89391 26.7103 10.1906 26.8333 10.5 26.8334C10.6534 26.8338 10.8053 26.8037 10.9468 26.7447C11.16 26.6563 11.3421 26.5067 11.4702 26.3149C11.5984 26.123 11.6667 25.8974 11.6667 25.6667V2.33335C11.6667 2.02393 11.5437 1.72719 11.325 1.5084C11.1062 1.2896 10.8094 1.16669 10.5 1.16669Z"
-								fill="black" />
-							<path
-								d="M22.9915 6.17515L18.3248 1.50849C18.1617 1.34537 17.9538 1.2343 17.7275 1.1893C17.5013 1.14431 17.2667 1.16741 17.0536 1.25569C16.8404 1.34398 16.6582 1.49347 16.53 1.68528C16.4018 1.8771 16.3334 2.10261 16.3333 2.33332V25.6667C16.3333 25.9761 16.4562 26.2728 16.675 26.4916C16.8938 26.7104 17.1906 26.8333 17.5 26.8333C17.8094 26.8333 18.1062 26.7104 18.3249 26.4916C18.5437 26.2728 18.6667 25.9761 18.6667 25.6667V5.14965L21.3418 7.82482C21.5619 8.03734 21.8566 8.15493 22.1625 8.15227C22.4683 8.14961 22.761 8.02692 22.9773 7.81061C23.1936 7.5943 23.3163 7.30168 23.3189 6.99579C23.3216 6.68989 23.204 6.39519 22.9915 6.17515Z"
-								fill="black" />
-						</svg>
-					</button>
-				</div>
-			</section>
-			<aside class="sidebar" id="sidebar">
-				<div class="sidebar__header">
-					<h2 class="sidebar__title">Main menu</h2>
-					<button class="sidebar__button" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg"
-							width="28" height="28" viewBox="0 0 28 28" fill="none">
-							<path
-								d="M14 1.16669C11.4618 1.16669 8.98061 1.91935 6.87018 3.32949C4.75975 4.73964 3.11487 6.74393 2.14354 9.08892C1.17222 11.4339 0.918074 14.0143 1.41325 16.5037C1.90843 18.9931 3.13068 21.2798 4.92546 23.0746C6.72023 24.8693 9.00691 26.0916 11.4963 26.5868C13.9858 27.0819 16.5661 26.8278 18.9111 25.8565C21.2561 24.8852 23.2604 23.2403 24.6705 21.1298C26.0807 19.0194 26.8333 16.5382 26.8333 14C26.8293 10.5976 25.4759 7.33576 23.0701 4.92992C20.6643 2.52407 17.4024 1.1707 14 1.16669ZM14 24.5C11.9233 24.5 9.89322 23.8842 8.16651 22.7305C6.43979 21.5767 5.09398 19.9368 4.29926 18.0182C3.50454 16.0996 3.29661 13.9884 3.70175 11.9516C4.10689 9.91477 5.10692 8.04385 6.57537 6.5754C8.04383 5.10695 9.91475 4.10692 11.9515 3.70178C13.9883 3.29663 16.0995 3.50457 18.0182 4.29929C19.9368 5.09401 21.5767 6.43982 22.7304 8.16653C23.8842 9.89325 24.5 11.9233 24.5 14C24.4969 16.7838 23.3897 19.4528 21.4212 21.4212C19.4527 23.3897 16.7838 24.4969 14 24.5Z"
-								fill="black" />
-							<path
-								d="M18.949 9.04983C18.7302 8.83112 18.4335 8.70825 18.1242 8.70825C17.8148 8.70825 17.5181 8.83112 17.2993 9.04983L14 12.3503L10.7007 9.04983C10.593 8.93841 10.4643 8.84953 10.322 8.78838C10.1796 8.72724 10.0265 8.69505 9.87163 8.69371C9.71672 8.69236 9.56309 8.72188 9.41971 8.78054C9.27634 8.8392 9.14607 8.92583 9.03653 9.03537C8.92699 9.14492 8.84036 9.27518 8.7817 9.41855C8.72304 9.56193 8.69352 9.71556 8.69487 9.87047C8.69621 10.0254 8.7284 10.1785 8.78954 10.3208C8.85069 10.4631 8.93956 10.5919 9.05099 10.6995L12.3503 14L9.05099 17.3005C8.93956 17.4081 8.85069 17.5369 8.78954 17.6792C8.7284 17.8215 8.69621 17.9746 8.69487 18.1295C8.69352 18.2844 8.72304 18.4381 8.7817 18.5814C8.84036 18.7248 8.92699 18.8551 9.03653 18.9646C9.14607 19.0742 9.27634 19.1608 9.41971 19.2195C9.56309 19.2781 9.71672 19.3076 9.87163 19.3063C10.0265 19.3049 10.1796 19.2728 10.322 19.2116C10.4643 19.1505 10.593 19.0616 10.7007 18.9502L14 15.6497L17.2993 18.9502C17.4069 19.0616 17.5357 19.1505 17.678 19.2116C17.8204 19.2728 17.9735 19.3049 18.1284 19.3063C18.2833 19.3076 18.4369 19.2781 18.5803 19.2195C18.7237 19.1608 18.8539 19.0742 18.9635 18.9646C19.073 18.8551 19.1596 18.7248 19.2183 18.5814C19.2769 18.4381 19.3065 18.2844 19.3051 18.1295C19.3038 17.9746 19.2716 17.8215 19.2104 17.6792C19.1493 17.5369 19.0604 17.4081 18.949 17.3005L15.6497 14L18.949 10.6995C19.1677 10.4807 19.2906 10.184 19.2906 9.87467C19.2906 9.56531 19.1677 9.26862 18.949 9.04983Z"
-								fill="black" />
-						</svg></button>
-				</div>
-				<nav class="sidebar__menu">
-					<ul class="sidebar__list">
-						<li class="sidebar__item  "><a href="home.html" class="sidebar__link _icon-home ">Home</a></li>
-						<li class="sidebar__item active"><a href="#" class="sidebar__link _icon-order active">My
-								order</a></li>
-						<li class="sidebar__item"><a href="#" class="sidebar__link _icon-notification">Notifications (2)</a>
-						</li>
-						<li class="sidebar__item"><a href="profile.html" class="sidebar__link _icon-profile">Profile</a></li>
+	<div class="wrapper ">
+		<header class="header">
+		</header>
+		<section class="subheader">
+			<div class="subheader__container">
+				<button class="subheader__sidebar-icon" id="openSidebar" aria-label="open sidebar button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18" fill="none">
+						<rect x="0.5" y="0.833313" width="21" height="2.33333" rx="1" fill="#222222" />
+						<rect x="6" y="7.83331" width="21" height="2.33333" rx="1" fill="#222222" />
+						<rect x="0.5" y="14.8333" width="21" height="2.33334" rx="1" fill="#222222" />
+					</svg>
+				</button>
+				<h2 class="subheader__title">Orders</h2>
+				<button class="subheader__filter-btn" aria-label="sort items">
+					<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+						<path
+							d="M10.5 1.16669C10.1906 1.16669 9.89383 1.2896 9.67504 1.5084C9.45625 1.72719 9.33333 2.02393 9.33333 2.33335V22.8504L6.65816 20.1752C6.43813 19.9627 6.14343 19.8451 5.83753 19.8477C5.53163 19.8504 5.23902 19.9731 5.02271 20.1894C4.8064 20.4057 4.6837 20.6983 4.68104 21.0042C4.67839 21.3101 4.79598 21.6048 5.0085 21.8249L9.67516 26.4915C9.89391 26.7103 10.1906 26.8333 10.5 26.8334C10.6534 26.8338 10.8053 26.8037 10.9468 26.7447C11.16 26.6563 11.3421 26.5067 11.4702 26.3149C11.5984 26.123 11.6667 25.8974 11.6667 25.6667V2.33335C11.6667 2.02393 11.5437 1.72719 11.325 1.5084C11.1062 1.2896 10.8094 1.16669 10.5 1.16669Z"
+							fill="black" />
+						<path
+							d="M22.9915 6.17515L18.3248 1.50849C18.1617 1.34537 17.9538 1.2343 17.7275 1.1893C17.5013 1.14431 17.2667 1.16741 17.0536 1.25569C16.8404 1.34398 16.6582 1.49347 16.53 1.68528C16.4018 1.8771 16.3334 2.10261 16.3333 2.33332V25.6667C16.3333 25.9761 16.4562 26.2728 16.675 26.4916C16.8938 26.7104 17.1906 26.8333 17.5 26.8333C17.8094 26.8333 18.1062 26.7104 18.3249 26.4916C18.5437 26.2728 18.6667 25.9761 18.6667 25.6667V5.14965L21.3418 7.82482C21.5619 8.03734 21.8566 8.15493 22.1625 8.15227C22.4683 8.14961 22.761 8.02692 22.9773 7.81061C23.1936 7.5943 23.3163 7.30168 23.3189 6.99579C23.3216 6.68989 23.204 6.39519 22.9915 6.17515Z"
+							fill="black" />
+					</svg>
+				</button>
+			</div>
+		</section>
+		<aside class="sidebar" id="sidebar">
+			<div class="sidebar__header">
+				<h2 class="sidebar__title">Main menu</h2>
+				<button class="sidebar__button" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg"
+						width="28" height="28" viewBox="0 0 28 28" fill="none">
+						<path
+							d="M14 1.16669C11.4618 1.16669 8.98061 1.91935 6.87018 3.32949C4.75975 4.73964 3.11487 6.74393 2.14354 9.08892C1.17222 11.4339 0.918074 14.0143 1.41325 16.5037C1.90843 18.9931 3.13068 21.2798 4.92546 23.0746C6.72023 24.8693 9.00691 26.0916 11.4963 26.5868C13.9858 27.0819 16.5661 26.8278 18.9111 25.8565C21.2561 24.8852 23.2604 23.2403 24.6705 21.1298C26.0807 19.0194 26.8333 16.5382 26.8333 14C26.8293 10.5976 25.4759 7.33576 23.0701 4.92992C20.6643 2.52407 17.4024 1.1707 14 1.16669ZM14 24.5C11.9233 24.5 9.89322 23.8842 8.16651 22.7305C6.43979 21.5767 5.09398 19.9368 4.29926 18.0182C3.50454 16.0996 3.29661 13.9884 3.70175 11.9516C4.10689 9.91477 5.10692 8.04385 6.57537 6.5754C8.04383 5.10695 9.91475 4.10692 11.9515 3.70178C13.9883 3.29663 16.0995 3.50457 18.0182 4.29929C19.9368 5.09401 21.5767 6.43982 22.7304 8.16653C23.8842 9.89325 24.5 11.9233 24.5 14C24.4969 16.7838 23.3897 19.4528 21.4212 21.4212C19.4527 23.3897 16.7838 24.4969 14 24.5Z"
+							fill="black" />
+						<path
+							d="M18.949 9.04983C18.7302 8.83112 18.4335 8.70825 18.1242 8.70825C17.8148 8.70825 17.5181 8.83112 17.2993 9.04983L14 12.3503L10.7007 9.04983C10.593 8.93841 10.4643 8.84953 10.322 8.78838C10.1796 8.72724 10.0265 8.69505 9.87163 8.69371C9.71672 8.69236 9.56309 8.72188 9.41971 8.78054C9.27634 8.8392 9.14607 8.92583 9.03653 9.03537C8.92699 9.14492 8.84036 9.27518 8.7817 9.41855C8.72304 9.56193 8.69352 9.71556 8.69487 9.87047C8.69621 10.0254 8.7284 10.1785 8.78954 10.3208C8.85069 10.4631 8.93956 10.5919 9.05099 10.6995L12.3503 14L9.05099 17.3005C8.93956 17.4081 8.85069 17.5369 8.78954 17.6792C8.7284 17.8215 8.69621 17.9746 8.69487 18.1295C8.69352 18.2844 8.72304 18.4381 8.7817 18.5814C8.84036 18.7248 8.92699 18.8551 9.03653 18.9646C9.14607 19.0742 9.27634 19.1608 9.41971 19.2195C9.56309 19.2781 9.71672 19.3076 9.87163 19.3063C10.0265 19.3049 10.1796 19.2728 10.322 19.2116C10.4643 19.1505 10.593 19.0616 10.7007 18.9502L14 15.6497L17.2993 18.9502C17.4069 19.0616 17.5357 19.1505 17.678 19.2116C17.8204 19.2728 17.9735 19.3049 18.1284 19.3063C18.2833 19.3076 18.4369 19.2781 18.5803 19.2195C18.7237 19.1608 18.8539 19.0742 18.9635 18.9646C19.073 18.8551 19.1596 18.7248 19.2183 18.5814C19.2769 18.4381 19.3065 18.2844 19.3051 18.1295C19.3038 17.9746 19.2716 17.8215 19.2104 17.6792C19.1493 17.5369 19.0604 17.4081 18.949 17.3005L15.6497 14L18.949 10.6995C19.1677 10.4807 19.2906 10.184 19.2906 9.87467C19.2906 9.56531 19.1677 9.26862 18.949 9.04983Z"
+							fill="black" />
+					</svg></button>
+			</div>
+			<nav class="sidebar__menu">
+				<ul class="sidebar__list">
+					<li class="sidebar__item  "><a href="home.html" class="sidebar__link _icon-home ">Home</a></li>
+					<li class="sidebar__item active"><a href="#" class="sidebar__link _icon-order active">My
+							order</a></li>
+					<li class="sidebar__item"><a href="#" class="sidebar__link _icon-notification">Notifications (2)</a>
+					</li>
+					<li class="sidebar__item"><a href="profile.html" class="sidebar__link _icon-profile">Profile</a></li>
 
-					</ul>
-				</nav>
+				</ul>
+			</nav>
+			<div class="sidebar__logout-wrap">
 				<a href="index.html" class="sidebar__logout"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 						viewBox="0 0 24 24" fill="none">
 						<path
@@ -73,76 +74,75 @@
 							d="M12 13C12.2652 13 12.5196 12.8947 12.7071 12.7071C12.8946 12.5196 13 12.2652 13 12V2C13 1.73478 12.8946 1.48043 12.7071 1.29289C12.5196 1.10536 12.2652 0.999998 12 0.999998C11.7348 0.999998 11.4804 1.10536 11.2929 1.29289C11.1053 1.48043 11 1.73478 11 2V12C11 12.2652 11.1053 12.5196 11.2929 12.7071C11.4804 12.8947 11.7348 13 12 13Z"
 							fill="#FF8484" />
 					</svg>Logout</a>
-			</aside>
-
-			<main class="page main-content" id="mainContent">
-				<div class="page__container">
-					<form action="#" class="search-form search-form--orders">
-						<div class="search-form__wrapper">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-								<path
-									d="M22.707 21.293L17.6 16.182C19.1017 14.3173 19.8314 11.9479 19.6388 9.56147C19.4462 7.17505 18.3459 4.9533 16.5645 3.35365C14.7832 1.754 12.4563 0.898212 10.063 0.962481C7.66967 1.02675 5.39207 2.00618 3.69913 3.69913C2.00618 5.39207 1.02675 7.66967 0.962481 10.063C0.898212 12.4563 1.754 14.7832 3.35365 16.5645C4.9533 18.3459 7.17505 19.4462 9.56147 19.6388C11.9479 19.8314 14.3173 19.1017 16.182 17.6L21.293 22.711C21.4816 22.8931 21.7342 22.9939 21.9964 22.9917C22.2586 22.9894 22.5094 22.8842 22.6948 22.6988C22.8802 22.5134 22.9854 22.2626 22.9877 22.0004C22.9899 21.7382 22.8891 21.4856 22.707 21.297V21.293ZM2.99999 10.333C2.99999 8.88242 3.43015 7.46442 4.23606 6.25833C5.04197 5.05224 6.18745 4.11222 7.52762 3.55716C8.86779 3.0021 10.3425 2.85692 11.7651 3.13998C13.1878 3.42305 14.4946 4.12164 15.5203 5.14742C16.5459 6.1732 17.2443 7.48009 17.5272 8.90281C17.8101 10.3255 17.6647 11.8002 17.1094 13.1403C16.5542 14.4804 15.614 15.6257 14.4078 16.4315C13.2016 17.2372 11.7836 17.6672 10.333 17.667C8.38871 17.6646 6.52477 16.8911 5.15005 15.5162C3.77534 14.1413 3.00211 12.2773 2.99999 10.333Z"
-									fill="#BFBFBF" />
-							</svg>
-							<input class="search-form__input" type="search" name="search" id="search"
-								placeholder="Searc Order ID or Product">
-						</div>
-					</form>
-					<div class="orders">
-						<div class="orders__buttons-wrap">
-							<button class="active" data-status="on-delivery">All</button>
-							<button data-status="on-delivery">On delivery</button>
-							<button data-status="done">Done</button>
-
-						</div>
-						<div class="orders__wrapper">
-							<div class="orders__item item-order ">
-								<img src="img/order-1.jpg" alt="Melted Omelette with Spicy Chilli" class="item-order__image">
-								<div class="item-order__content">
-									<h3 class="item-order__title">Melted Omelette with Spicy Chilli</h3>
-									<div class="item-order__info">
-										<span class="item-order__price">$11.6</span>
-										<span class="item-order__quantity">2x</span>
-										<span class="item-order__total-price">$5.8</span>
-
-									</div>
-								</div>
-							</div>
-							<div class="orders__item item-order">
-								<img src="img/order-2.jpg" alt="Avocado Blend with Topping Egg" class="item-order__image">
-								<div class="item-order__content">
-									<h3 class="item-order__title">Avocado Blend with Topping Egg</h3>
-									<div class="item-order__info">
-										<span class="item-order__price">$8.6</span>
-										<span class="item-order__quantity">1x</span>
-										<span class="item-order__total-price">$8.6</span>
-
-									</div>
-								</div>
-							</div>
-							<div class="orders__item item-order">
-								<img src="img/order-3.jpg" alt="Random Vegetables for Breakfast" class="item-order__image">
-								<div class="item-order__content">
-									<h3 class="item-order__title">Random Vegetables for Breakfast</h3>
-									<div class="item-order__info">
-										<span class="item-order__price">$11.6</span>
-										<span class="item-order__quantity">2x</span>
-										<span class="item-order__total-price">$5.8</span>
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<button class="orders__button button button--green">Place order</button>
+			</div>
+		</aside>
+		<main class="page main-content" id="mainContent">
+			<div class="page__container">
+				<form action="#" class="search-form search-form--orders">
+					<div class="search-form__wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M22.707 21.293L17.6 16.182C19.1017 14.3173 19.8314 11.9479 19.6388 9.56147C19.4462 7.17505 18.3459 4.9533 16.5645 3.35365C14.7832 1.754 12.4563 0.898212 10.063 0.962481C7.66967 1.02675 5.39207 2.00618 3.69913 3.69913C2.00618 5.39207 1.02675 7.66967 0.962481 10.063C0.898212 12.4563 1.754 14.7832 3.35365 16.5645C4.9533 18.3459 7.17505 19.4462 9.56147 19.6388C11.9479 19.8314 14.3173 19.1017 16.182 17.6L21.293 22.711C21.4816 22.8931 21.7342 22.9939 21.9964 22.9917C22.2586 22.9894 22.5094 22.8842 22.6948 22.6988C22.8802 22.5134 22.9854 22.2626 22.9877 22.0004C22.9899 21.7382 22.8891 21.4856 22.707 21.297V21.293ZM2.99999 10.333C2.99999 8.88242 3.43015 7.46442 4.23606 6.25833C5.04197 5.05224 6.18745 4.11222 7.52762 3.55716C8.86779 3.0021 10.3425 2.85692 11.7651 3.13998C13.1878 3.42305 14.4946 4.12164 15.5203 5.14742C16.5459 6.1732 17.2443 7.48009 17.5272 8.90281C17.8101 10.3255 17.6647 11.8002 17.1094 13.1403C16.5542 14.4804 15.614 15.6257 14.4078 16.4315C13.2016 17.2372 11.7836 17.6672 10.333 17.667C8.38871 17.6646 6.52477 16.8911 5.15005 15.5162C3.77534 14.1413 3.00211 12.2773 2.99999 10.333Z"
+								fill="#BFBFBF" />
+						</svg>
+						<input class="search-form__input" type="search" name="search" id="search"
+							placeholder="Searc Order ID or Product">
 					</div>
-				</div>
-			</main>
+				</form>
+				<div class="orders">
+					<div class="orders__buttons-wrap">
+						<button class="active" data-status="on-delivery">All</button>
+						<button data-status="on-delivery">On delivery</button>
+						<button data-status="done">Done</button>
 
-			<footer class="footer">
-				<div class="footer__container">
+					</div>
+					<div class="orders__wrapper">
+						<div class="orders__item item-order ">
+							<img src="img/order-1.jpg" alt="Melted Omelette with Spicy Chilli" class="item-order__image">
+							<div class="item-order__content">
+								<h3 class="item-order__title">Melted Omelette with Spicy Chilli</h3>
+								<div class="item-order__info">
+									<span class="item-order__price">$11.6</span>
+									<span class="item-order__quantity">2x</span>
+									<span class="item-order__total-price">$5.8</span>
+
+								</div>
+							</div>
+						</div>
+						<div class="orders__item item-order">
+							<img src="img/order-2.jpg" alt="Avocado Blend with Topping Egg" class="item-order__image">
+							<div class="item-order__content">
+								<h3 class="item-order__title">Avocado Blend with Topping Egg</h3>
+								<div class="item-order__info">
+									<span class="item-order__price">$8.6</span>
+									<span class="item-order__quantity">1x</span>
+									<span class="item-order__total-price">$8.6</span>
+
+								</div>
+							</div>
+						</div>
+						<div class="orders__item item-order">
+							<img src="img/order-3.jpg" alt="Random Vegetables for Breakfast" class="item-order__image">
+							<div class="item-order__content">
+								<h3 class="item-order__title">Random Vegetables for Breakfast</h3>
+								<div class="item-order__info">
+									<span class="item-order__price">$11.6</span>
+									<span class="item-order__quantity">2x</span>
+									<span class="item-order__total-price">$5.8</span>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="orders__button button button--green">Place order</button>
 				</div>
-			</footer>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
 		<script src="js/script.js"></script>
 	</div>
 </body>

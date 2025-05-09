@@ -11,10 +11,10 @@
 // Обнулення
 @import "_reset.scss";
 // Компоненти
-@import "order.scss";
 @import "login.scss";
 @import "home.scss";
 @import "profile.scss";
+@import "order.scss";
 
 // Мінімальна ширина сторінки
 $minWidth: 320;
@@ -49,7 +49,6 @@ body {
 		border-radius: toRem(20);
 		height: toRem(800);
 	}
-
 }
 
 [class*="__container"] {
