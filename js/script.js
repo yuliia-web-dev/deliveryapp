@@ -83,6 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (!openBtn || !sidebar || !content || !closeBtn) return;
 
 	let isOpen = false;
+	let touchStartX = 0;
+	let touchEndX = 0;
 
 	function toggleSidebar() {
 		isOpen = !isOpen;
@@ -90,29 +92,35 @@ document.addEventListener("DOMContentLoaded", () => {
 		content.classList.toggle('shifted', isOpen);
 
 		if (isOpen) {
-			// Показуємо кнопку знову
 			closeBtn.style.opacity = '1';
 			closeBtn.style.pointerEvents = 'auto';
 		}
 	}
 
-	openBtn.addEventListener('click', toggleSidebar);
-
-	content.addEventListener('click', () => {
+	function closeSidebar() {
 		if (isOpen) {
-			// Ховаємо кнопку
 			closeBtn.style.opacity = '0';
 			closeBtn.style.pointerEvents = 'none';
 			toggleSidebar();
 		}
+	}
+
+	openBtn.addEventListener('click', toggleSidebar);
+	closeBtn.addEventListener('click', closeSidebar);
+	content.addEventListener('click', closeSidebar);
+
+	// Свайп (на мобільних)
+	content.addEventListener('touchstart', (e) => {
+		touchStartX = e.changedTouches[0].screenX;
 	});
 
-	closeBtn.addEventListener('click', () => {
-		if (isOpen) {
-			// Ховаємо кнопку
-			closeBtn.style.opacity = '0';
-			closeBtn.style.pointerEvents = 'none';
-			toggleSidebar();
+	content.addEventListener('touchend', (e) => {
+		touchEndX = e.changedTouches[0].screenX;
+		let diffX = touchEndX - touchStartX;
+
+		// Якщо свайп вліво більше ніж 50px — закриваємо
+		if (isOpen && diffX < -50) {
+			closeSidebar();
 		}
 	});
 });
