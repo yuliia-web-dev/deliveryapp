@@ -1752,7 +1752,7 @@ html {
 }
 
 body {
-  background-color: #b3ffd0;
+  background-color: #b0eac3;
   font-family: "Raleway";
 }
 
@@ -1777,7 +1777,8 @@ body {
 }
 
 .mockup {
-  padding-top: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background-color: #0a4f27;
   margin: 0 auto;
   width: 100%;
@@ -1805,7 +1806,7 @@ body {
   left: 6.4375rem;
 }
 .welcome--padding {
-  padding-top: 12.5rem;
+  padding-top: 13.125rem;
 }
 .welcome__container {
   display: -webkit-box;

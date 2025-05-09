@@ -31,7 +31,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background-color: #b3ffd0;
+	background-color: #b0eac3;
 	font-family: "Raleway";
 }
 .wrapper {
@@ -50,7 +50,8 @@ body {
 
 
 .mockup {
-	padding-top: toRem(20);
+	padding-top: toRem(10);
+	padding-bottom: toRem(10);
 	background-color: #0a4f27;
 	margin: 0 auto;
 	width: 100%;
@@ -75,7 +76,7 @@ body {
 		left: toRem(103);
 	}
 	&--padding {
-		padding-top: toRem(200);
+	padding-top: toRem(210);
 	}
 
 	&__container {
